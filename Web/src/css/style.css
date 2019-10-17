@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 89vh;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+.color-overlay{
+    width: inherit;
+    height: inherit;
+    color: #fff;
+    background: linear-gradient(-45deg, rgba(143, 17, 238, 0.73), rgba(110, 65, 231, 0.85), rgba(35, 166, 213, 0.82), rgba(35, 213, 171, 0.87));
+    background-size: 400%, 400%;
+    background-blend-mode: overlay;
+    position: relative;
+    animation: change 30s ease-in-out infinite;
+}
+
+.logo{
+    cursor: pointer;
+    width: 10%;
+    height: 4%;
+    margin-right: auto;
+}
+
+.li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position:fixed;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #fffd10
+}
+
+button {
+    padding: 9px 25px;
+    background: linear-gradient(90deg, #fffd10, #ffd900);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:all 0.3s ease 0s;
+}
+
+button:hover {
+    background: linear-gradient(-90deg, #f1ef10, #eeca00);
+    -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.18);
+}
+
+.connexion{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(50%, -50%);
+    width: 30%;
+    background: #f6f6f6;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 6px 20px;
+    -moz-box-shadow: 2px 6px 20px;
+    box-shadow: 2px 6px 60px rgba(37, 37, 37, 0.34);
+    align-content: center;
+    padding: 2% 0 0 3%;
+}
+
+.form__connexion {
+
+}
+
+.form_txt {
+    display: inline-block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 35px;
+    color: #808080;
+    font-size:16px;
+    width: 87%;
+    outline:none;
+    line-height: 30px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
+
+.form_btn {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    color: #ffffff;
+    margin: 25px auto;
+    background: linear-gradient(-90deg, #f1ef10, #eeca00);
+    font-size:16px;
+    width: 87%;
+    font-weight: bolder;
+    border:none;
+    outline:none;
+    line-height: 40px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.form_btn:hover {
+    background: linear-gradient(90deg, #f1ef10, #eeca00);
+    cursor: pointer;
+}
+
+.form_txt:hover{
+    -webkit-box-shadow: 0px 0px 20px #ffef91;
+    -moz-box-shadow: 0px 0px 20px #ffef91;
+    box-shadow: 0px 0px 20px #ffef91;
+    border: 2px solid #ffef91;
+}
+
+.form_txt:focus {
+    -webkit-box-shadow: 0px 0px 20px #82ffab;
+    -moz-box-shadow: 0px 0px 20px #82ffab;
+    box-shadow: 0px 0px 20px #82ffab;
+    border: 2px solid #82ffab;
+}
+
+aside p {
+    color: #6d6d6d;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+aside p a {
+    color: #009aff;
+    font-size: 13px;
+}
+
+aside p a:hover {
+    text-decoration: underline;
+}
+
+.foot{
+    width: 100%;
+    height: 6vh;;
+    background: #ffffff;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+.foot pre{
+    font-size: 13px;
+    color: #bdbdbd;
+    align-content: center;
+    margin: 2% 45%;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
